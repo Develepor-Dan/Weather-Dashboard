@@ -1,0 +1,94 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a background color and default font styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #73a3d3; /* Light gray background */
+  color: #1f2d3a; /* Dark text color */
+}
+
+/* Style the header */
+.weather-header {
+  background-color: #11365b59; /* Dark Blue color */
+  height: 100px;
+}
+
+.weather-header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.weather-header h3 {
+  font-size: 1rem;
+}
+
+.weather-header div{
+     display: flex;
+     flex-wrap: wrap;
+     align-content: center;
+     align-items: flex-end;
+     justify-content: center;
+     padding-top: 15px;
+}
+
+/* Style the form */
+.form {
+  margin-bottom: 50px;
+}
+.row {
+     margin-top: 50px
+}
+
+.weather-search {
+  width: 70%;
+  padding: 8px;
+  background-color: #11365b2e;
+  border: 1px solid #00081159; /* Gray border */
+  border-radius: 5px;
+}
+
+.search-button {
+  background-color: #004d9f; /* Blue button color */
+  color: #fff; /* White text color */
+  border: 1px solid #007bff;
+  border-radius: 5px;
+}
+
+/* Style the search history */
+.list-group {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Style the HR element */
+.weather-hr {
+  border-top: 1px solid rgba(37, 84, 130, 0.448); /* Dark color */
+}
+
+/* Style the today and forecast sections */
+#today,
+#forecast {
+  background-color: #11365b3c; /* Blue background */
+  padding: 15px;
+  border: 1px solid #505153; /* Gray border */
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Responsive styling for small screens */
+@media (max-width: 767px) {
+  .weather-search {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
